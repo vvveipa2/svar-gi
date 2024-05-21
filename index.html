@@ -34,6 +34,41 @@
             iframe{
                 height: 100%
             }
+            .block{
+                height: 200px;
+                width: 200px;
+                background-color: orangered;
+                animation: D 4s infinite;
+            }
+            @keyframes D {
+                0% {
+                    width: 200px;
+                    background-color: orangered;
+                }
+                20% {
+                    width: 300px;
+                    background-color: yellow;
+                }
+                40% {
+                    width: 400px;
+                    background-color: green;
+                }
+                60% {
+                    width: 500px;
+                    background-color: blue;
+                }
+                80% {
+                    width: 350px;
+                    background-color: blueviolet;
+                }
+                90% {
+                    width: 300px;
+                    background-color: red;
+                }
+                100% {
+                    width: 200px;
+                    background-color: orangered;
+                }
         </style>
     </head>
     <body>
@@ -49,6 +84,9 @@
             <tr>
                 <td class="B">
                     <iframe src="menu.html" frameborder="0"></iframe>
+                </td>
+                <td>
+                    <div class="block"></div>
                 </td>
                 <td>Content</td>
             </tr>
